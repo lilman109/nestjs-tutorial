@@ -41,7 +41,7 @@ export class UsersService {
     if (role) {
       const rolesArray = this.users.filter((user) => user.role === role);
       if (rolesArray.length === 0) {
-        throw new NotFoundException("Role not found")
+        throw new NotFoundException('Role not found');
       }
     }
 
